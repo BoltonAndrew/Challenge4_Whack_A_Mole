@@ -42,6 +42,7 @@ start.addEventListener("click", () => {
         const vanish = setTimeout(() => {
             holes[ranNum].src = "./assets/hole.png";
             holes[ranNum].removeEventListener("click", count)
+            ranNum = 0;
         }, 900)
     }, 1000)
 
